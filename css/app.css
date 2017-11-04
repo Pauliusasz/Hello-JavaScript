@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body {font-family: 'Open Sans', sans-serif;}
+.table 
+{
+	background-color: grey;
+	border: 3px solid red;
+	border-spacing: 0 solid black
+}
+.thead
+{
+	font-size: 15px;
+}
