@@ -21,7 +21,7 @@
 	}
 	sum(5,9) */
 
-var i = 0;
+/*var i = 0;
 var fiveArray = [];
 var amount = 10;
 var step = 15;
@@ -39,6 +39,53 @@ i = 0;
 while (fiveArray.length <amount){
 	fiveArray.push(i);
 	i += step
+}*/
+
+var language = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
+
+var currentLanguageIndex = getLanguage();
+function getLanguage()
+{
+	var date = new Date();
+		date = date.getSeconds() % 10;
+		date = language[date];
+	return date;
 }
+
+function greetUser() 
+{
+	/*if (currentLanguageIndex === "en")
+	 {
+	 	console.log("Hello world!");
+	 }
+	 else if (currentLanguageIndex === "lt")
+	 {
+	 	console.log("Labas pasauli!");
+	 }
+	 else {
+	 	console.log("...")
+	 }*/
+
+	 var message = '...'
+
+	 switch (currentLanguageIndex)
+	 {
+	 	case "en" :
+
+	 		message = "Hello world!"
+	 		break;
+
+	 	case "lt" :
+
+	 		message = "Labas pasauli!"
+	 		break;
+	 }
+
+	 console.log(message);
+}
+
+greetUser();
+
+
 </script>
 </html>
