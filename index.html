@@ -22,21 +22,23 @@
 	sum(5,9) */
 
 var i = 0;
-var count = 0;
-while (count < 10) {
+var fiveArray = [];
+var amount = 10;
+var step = 15;
+while (fiveArray.length < amount) {
 	
-	if (i % 5 === 0)
+	if (i % step === 0)
 	{
-		console.log(true, i, calc);
-		count++
+		fiveArray[fiveArray.length] = i;
 	}
-
-	else
-	{
-		console.log(false,i,calc);
-	}
-	i++;
+	i ++;
 }
-
+console.log(fiveArray);
+fiveArray = [];
+i = 0;
+while (fiveArray.length <amount){
+	fiveArray.push(i);
+	i += step
+}
 </script>
 </html>
